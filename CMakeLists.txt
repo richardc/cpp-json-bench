@@ -28,6 +28,8 @@ list(APPEND CMAKE_MODULE_PATH ${VENDOR_DIRECTORY})
 
 include_directories(
     SYSTEM "${VENDOR_DIRECTORY}/hayai/src"
+    SYSTEM "${VENDOR_DIRECTORY}/rapidjson/include"
+    SYSTEM "${VENDOR_DIRECTORY}/picojson"
 )
 
 # Add the main binary
