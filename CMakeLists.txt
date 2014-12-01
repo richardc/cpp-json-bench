@@ -30,6 +30,7 @@ include_directories(
     SYSTEM "${VENDOR_DIRECTORY}/hayai/src"
     SYSTEM "${VENDOR_DIRECTORY}/rapidjson/include"
     SYSTEM "${VENDOR_DIRECTORY}/picojson"
+    SYSTEM "${VENDOR_DIRECTORY}/jsoncpp"
 )
 
 # Add the main binary

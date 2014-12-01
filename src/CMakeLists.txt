@@ -1,7 +1,8 @@
 cmake_minimum_required(VERSION 2.8.12)
 
 set(APPLICATION_SOURCES
-    "${CMAKE_CURRENT_LIST_DIR}/main.cpp"
+  "${CMAKE_CURRENT_LIST_DIR}/main.cpp"
+  "${CMAKE_CURRENT_LIST_DIR}/../vendor/jsoncpp/jsoncpp.cpp"
 )
 
 SET(LIBS

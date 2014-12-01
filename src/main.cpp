@@ -2,6 +2,7 @@
 #include <rapidjson/document.h>
 #include <rapidjson/filestream.h>
 #include <picojson.h>
+#include <json/json.h>
 #include <fstream>
 #include <iterator>
 #include <string>
@@ -17,6 +18,13 @@ BENCHMARK(PicoJson, ParseFile, 2, 10) {
     std::ifstream fs("MOCK_DATA.json");
     picojson::value v;
     fs >> v;
+}
+
+BENCHMARK(JsonCPP, ParseFile, 2, 10) {
+    std::ifstream fs("MOCK_DATA.json");
+    Json::Value v;
+    Json::Reader r;
+    r.parse(fs, v);
 }
 
 int main() {
