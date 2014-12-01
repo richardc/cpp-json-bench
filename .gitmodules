@@ -1,3 +1,6 @@
 [submodule "vendor/hayai"]
 	path = vendor/hayai
 	url = https://github.com/nickbruun/hayai
+[submodule "vendor/rapidjson"]
+	path = vendor/rapidjson
+	url = https://github.com/miloyip/rapidjson
